@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditProductForm</class>
+ <widget class="QWidget" name="EditProductForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>388</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: white;
+}
+
+/*--------------------------------- Push Buttons (END)-------------------------------------*/
+QPushButton {
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+ 	padding: 10px;
+
+	border-radius: 6.28px;
+	border: 1.82px solid #1F1F1F;
+	
+	background-color: white;
+}
+
+QPushButton:checked
+{
+	background-color: #0096C7;
+	border: 1.82px solid #1F1F1F;
+	color:white;
+}
+
+#DiscardButton
+{
+	border: 1.82px solid #e30a17;
+	color: #e30a17;
+}
+
+#SaveButton
+{
+	background-color:#ade8f4;
+	color:white;
+}
+/*--------------------------------- Push Buttons (END)-------------------------------------*/
+
+
+/*--------------------------------- Line Edits (START)---------------------------------------*/
+QLineEdit
+{
+	color: black;
+
+	padding: 10px;
+
+	border-radius: 6.28px;
+	border: 1.82px solid #1F1F1F;
+
+	background-color: white;
+}
+
+#SearchUserByNameLineEdit
+{
+	color: black;
+
+	padding: 10px;
+
+	border-radius: 6.28px;
+	border: 1.82px solid #1F1F1F;
+
+	background-color: white;
+}
+
+#SearchCategoryByNameLineEdit
+{
+	color: black;
+
+	padding: 10px;
+
+	border-radius: 6.28px;
+	border: 1.82px solid #1F1F1F;
+
+	background-color: white;
+}
+/*--------------------------------- Line Edits (END)------------------------------------------*/
+
+
+/*--------------------------------- Label (START)-----------------------------------*/
+QLabel
+{
+	color: black;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#SideBarLogoLabel
+{
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
+
+	background-color: transparent;
+}
+
+#NumberOfProductRecordsShownLabel
+{
+	color: black;
+}
+#NumberOfUserRecordsShownLabel
+{
+	color: black;
+}
+#NumberOfCategoryRecordsShownLabel
+{
+	color: black;
+}
+/*--------------------------------- Labels (END)--------------------------------------*/
+
+
+/*--------------------------------- Widgets (START)-------------------------------------*/
+#SideBarWidget
+{
+	background-color: #ADE8F4;
+}
+/*--------------------------------- Widgets (END)-------------------------------------*/
+
+
+/*--------------------------------- Tables (START)-------------------------------------*/
+QTableView {
+
+    padding: 5px;
+
+    border: 1px solid #CCC;
+    border-radius: 5px;
+
+    gridline-color: #EEE;
+	/*alternate-background-color: #f4f5f7;*/
+}
+
+QHeaderView::section {
+    color: #333;
+    font-size: 11pt;
+font-weight: bold;
+
+    padding: 4px;
+
+    background-color: white;
+}
+
+QTableView::item {
+	color: black;
+
+    padding: 5px;
+}
+
+QTableView::item:selected {
+    color: black;
+	font-weight: bold;
+	background-color: #ADE8F4;
+}
+/*--------------------------------- Tables (END)-------------------------------------*/
+
+/*--------------------------------- ComboBox(START)-------------------------------*/
+QComboBox {
+    border: 1.82px solid #1F1F1F;
+    border-radius: 6.28px;
+	padding:10px;
+   	padding-left:15px;
+	padding-right:15px;
+
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
+
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox::drop-down {
+    border-left: 1.82px solid #1F1F1F;
+	color: black;
+	image: url(:/icons/drop-down.svg);
+    width: 20px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: white;
+    color: black;
+    selection-background-color: lightgray;
+    selection-color: black;
+    border: 1px solid black;
+}
+/*-------------------------------------------------ComboBox(END)---------------------------*/
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>100</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="EditProductLabel">
+     <property name="text">
+      <string>Edit Product</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>20</number>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="ProductNameLineEdit">
+       <property name="placeholderText">
+        <string>Name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="ProductCategoryLineEdit">
+       <property name="placeholderText">
+        <string>Category</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="ProductPricePerKgLineEdit">
+       <property name="placeholderText">
+        <string>Price Per KG</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="ProductPricePerPcsLineEdit">
+       <property name="placeholderText">
+        <string>Price Per Piece</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="ProductStockQuantityLineEdit">
+       <property name="placeholderText">
+        <string>Quantity</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="DiscardButton">
+       <property name="text">
+        <string>Discard</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="SaveButton">
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

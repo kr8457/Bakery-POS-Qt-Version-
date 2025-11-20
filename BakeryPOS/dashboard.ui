@@ -1,0 +1,1434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dashboard</class>
+ <widget class="QMainWindow" name="dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1575</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>dashboard</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LayoutDirection::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">/*--------------------------------- Push Buttons (END)-------------------------------------*/
+QPushButton {
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+ 	padding: 10px;
+
+	border-radius: 6.28px;
+	border: 1.82px solid #1F1F1F;
+	
+	background-color: white;
+}
+
+QPushButton:checked
+{
+	background-color: #0096C7;
+	border: 1.82px solid #1F1F1F;
+	color:white;
+}
+
+
+#LogoutButton {
+	color: white;
+
+	border: 1.82px solid #E0E0E0;
+
+	background-color: #e30a17;
+}
+
+#LogoutButton:hover {	
+	background-color: white;
+	border: 1.82px solid #1F1F1F;
+	color: black;
+}
+
+#AddProductButton
+{
+	color:white;
+
+	padding-left:15px;
+	padding-right:15px;
+
+	border: 1.82px solid #1F1F1F;
+
+	background-color: #ADE8F4;
+}
+
+#AddUserButton
+{
+	color:white;
+
+	padding-left:15px;
+	padding-right:15px;
+
+	border: 1.82px solid #1F1F1F;
+
+	background-color: #ADE8F4;
+}
+
+#AddCategoryButton
+{
+	color:white;
+
+	padding-left:15px;
+	padding-right:15px;
+
+	border: 1.82px solid #1F1F1F;
+
+	background-color: #ADE8F4;
+}
+
+#AddProductButton:hover
+{
+	background-color: white;
+	border: 1.82px solid #1F1F1F;
+	color: black;
+}
+
+#AddUserButton:hover
+{
+	background-color: white;
+	border: 1.82px solid #1F1F1F;
+	color: black;
+}
+
+#AddCategoryButton:hover
+{
+	background-color: white;
+	border: 1.82px solid #1F1F1F;
+	color: black;
+}
+
+#DeleteProductButton
+{
+	color:white;
+
+	padding-left:15px;
+	padding-right:15px;
+
+	border: 1.82px solid #1F1F1F;
+
+	background-color: #e30a17;
+}
+
+#DeleteUserButton
+{
+	color:white;
+
+	padding-left:15px;
+	padding-right:15px;
+
+	border: 1.82px solid #1F1F1F;
+
+	background-color: #e30a17;
+}
+
+#DeleteCategoryButton
+{
+	color:white;
+
+	padding-left:15px;
+	padding-right:15px;
+
+	border: 1.82px solid #1F1F1F;
+
+	background-color: #e30a17;
+}
+
+
+#DeleteProductButton:hover
+{
+	background-color: white;
+	border: 1.82px solid #1F1F1F;
+	color: black;
+}
+
+#DeleteUserButton:hover
+{
+	background-color: white;
+	border: 1.82px solid #1F1F1F;
+	color: black;
+}
+
+#DeleteCategoryButton:hover
+{
+	background-color: white;
+	border: 1.82px solid #1F1F1F;
+	color: black;
+}
+
+#EditProductButton
+{
+	color:white;
+
+	padding-left:15px;
+	padding-right:15px;
+
+	border: 1.82px solid #1F1F1F;
+
+	background-color: #FFB74D;
+}
+
+#EditUserButton
+{
+	color:white;
+
+	padding-left:15px;
+	padding-right:15px;
+
+	border: 1.82px solid #1F1F1F;
+
+	background-color: #FFB74D;
+}
+
+#EditCategoryButton
+{
+	color:white;
+
+	padding-left:15px;
+	padding-right:15px;
+
+	border: 1.82px solid #1F1F1F;
+
+	background-color: #FFB74D;
+}
+
+#EditProductButton:hover
+{
+	background-color: white;
+	border: 1.82px solid #1F1F1F;
+	color: black;
+}
+
+#EditUserButton:hover
+{
+	background-color: white;
+	border: 1.82px solid #1F1F1F;
+	color: black;
+}
+
+#EditCategpryButton:hover
+{
+	background-color: white;
+	border: 1.82px solid #1F1F1F;
+	color: black;
+}
+/*--------------------------------- Push Buttons (END)-------------------------------------*/
+
+
+/*--------------------------------- Line Edits (START)---------------------------------------*/
+#SearchProductByNameLineEdit
+{
+	color: black;
+
+	padding: 10px;
+
+	border-radius: 6.28px;
+	border: 1.82px solid #1F1F1F;
+
+	background-color: white;
+}
+
+#SearchUserByNameLineEdit
+{
+	color: black;
+
+	padding: 10px;
+
+	border-radius: 6.28px;
+	border: 1.82px solid #1F1F1F;
+
+	background-color: white;
+}
+
+#SearchCategoryByNameLineEdit
+{
+	color: black;
+
+	padding: 10px;
+
+	border-radius: 6.28px;
+	border: 1.82px solid #1F1F1F;
+
+	background-color: white;
+}
+/*--------------------------------- Line Edits (END)------------------------------------------*/
+
+
+/*--------------------------------- Label (START)-----------------------------------*/
+#FormNameLabel
+{
+	color: black;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#SideBarLogoLabel
+{
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
+
+	background-color: transparent;
+}
+
+#NumberOfProductRecordsShownLabel
+{
+	color: black;
+}
+#NumberOfUserRecordsShownLabel
+{
+	color: black;
+}
+#NumberOfCategoryRecordsShownLabel
+{
+	color: black;
+}
+/*--------------------------------- Labels (END)--------------------------------------*/
+
+
+/*--------------------------------- Widgets (START)-------------------------------------*/
+#SideBarWidget
+{
+	background-color: #ADE8F4;
+}
+/*--------------------------------- Widgets (END)-------------------------------------*/
+
+
+/*--------------------------------- Tables (START)-------------------------------------*/
+QTableView {
+
+    padding: 5px;
+
+    border: 1px solid #CCC;
+    border-radius: 5px;
+
+    gridline-color: #EEE;
+	/*alternate-background-color: #f4f5f7;*/
+}
+
+QHeaderView::section {
+    color: #333;
+    font-size: 11pt;
+font-weight: bold;
+
+    padding: 4px;
+
+    background-color: white;
+}
+
+QTableView::item {
+	color: black;
+
+    padding: 5px;
+}
+
+QTableView::item:selected {
+    color: black;
+	font-weight: bold;
+	background-color: #ADE8F4;
+}
+/*--------------------------------- Tables (END)-------------------------------------*/
+
+/*--------------------------------- ComboBox(START)-------------------------------*/
+QComboBox {
+    border: 1.82px solid #1F1F1F;
+    border-radius: 6.28px;
+	padding:10px;
+   	padding-left:15px;
+	padding-right:15px;
+
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
+
+QComboBox::down-arrow {
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox::drop-down {
+    border-left: 1.82px solid #1F1F1F;
+	color: black;
+	image: url(:/icons/drop-down.svg);
+    width: 20px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: white;
+    color: black;
+    selection-background-color: lightgray;
+    selection-color: black;
+    border: 1px solid black;
+}
+/*-------------------------------------------------ComboBox(END)---------------------------*/
+</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,0">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="SideBarWidget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>2</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>800</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="10,0,26,45,5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>11</number>
+       </property>
+       <property name="rightMargin">
+        <number>11</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="SideBarLogoLabel">
+         <property name="styleSheet">
+          <string notr="true">color: black;
+font-weight: bold;
+font-size: 30px;</string>
+         </property>
+         <property name="text">
+          <string>BakeryPOS</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="SideBarButtonsVLayout" stretch="0,0,0,0,0">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="UsersButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Users</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/icons/user-black-30.svg</normaloff>
+             <normalon>:/icons/user-white-30.svg</normalon>
+             <disabledoff>:/icons/user-black-30.svg</disabledoff>
+             <disabledon>:/icons/user-black-30.svg</disabledon>
+             <activeoff>:/icons/user-black-30.svg</activeoff>
+             <activeon>:/icons/user-white-30.svg</activeon>
+             <selectedoff>:/icons/user-black-30.svg</selectedoff>
+             <selectedon>:/icons/user-black-30.svg</selectedon>:/icons/user-black-30.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="AnalyticsButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Analytics</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/icons/analytics-black-30.svg</normaloff>
+             <activeon>:/icons/analytics-white-30.svg</activeon>:/icons/analytics-black-30.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="CategoriesButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Categories</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/icons/category-black-30.svg</normaloff>
+             <activeon>:/icons/category-white-30.svg</activeon>:/icons/category-black-30.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="ProductsButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Products</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/icons/product-black-30.svg</normaloff>
+             <activeon>:/icons/product-white-30.svg</activeon>:/icons/product-black-30.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="InvoiceButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="text">
+            <string>Invoice</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/icons/invoice-black-30.svg</normaloff>
+             <activeon>:/icons/invoice-white-30.svg</activeon>:/icons/invoice-black-30.svg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="SideBarVerticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="LogoutButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Logout</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/logout-white-30.svg</normaloff>:/icons/logout-white-30.svg</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="MainDisplayWidget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QStackedWidget" name="MainDisplayStackedWidget">
+         <property name="currentIndex">
+          <number>9</number>
+         </property>
+         <widget class="QWidget" name="ProductManagementPage">
+          <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="TopBarHLayout" stretch="0,0,0,0,0,0,0">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <property name="topMargin">
+              <number>20</number>
+             </property>
+             <property name="bottomMargin">
+              <number>20</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="ProductsFormNameLabel">
+               <property name="styleSheet">
+                <string notr="true">font-size: 25px;
+color: black;
+font-weight: bold;</string>
+               </property>
+               <property name="text">
+                <string>Products</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="SearchProductByNameLineEdit">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+               <property name="placeholderText">
+                <string>Search by name.....</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QComboBox" name="FilterCategoryComboBox">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <item>
+                <property name="text">
+                 <string>All</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Bakery</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Sweet</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>General</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="EditProductButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>Edit Product</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/icons/edit-white-30.svg</normaloff>:/icons/edit-white-30.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="DeleteProductButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>Delete Product</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/icons/delete-white-30.svg</normaloff>:/icons/delete-white-30.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AddProductButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Add Product</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/icons/add-white-30.svg</normaloff>:/icons/add-white-30.svg</iconset>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTableView" name="ProductPageTableView">
+             <property name="cursor" stdset="0">
+              <cursorShape>ArrowCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+             </property>
+             <property name="showGrid">
+              <bool>false</bool>
+             </property>
+             <property name="sortingEnabled">
+              <bool>true</bool>
+             </property>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderDefaultSectionSize">
+              <number>50</number>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="NumberOfProductRecordsShownLabel">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="AddProductsPage"/>
+         <widget class="QWidget" name="UpdateProductPage"/>
+         <widget class="QWidget" name="UserManagementPage">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="TopBarHLayout_2" stretch="0,0,0,0,0,0,0">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <property name="topMargin">
+              <number>20</number>
+             </property>
+             <property name="bottomMargin">
+              <number>20</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="UserFormNameLabel">
+               <property name="styleSheet">
+                <string notr="true">font-size: 25px;
+color: black;
+font-weight: bold;</string>
+               </property>
+               <property name="text">
+                <string>Users</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="SearchUserByNameLineEdit">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+               <property name="placeholderText">
+                <string>Search by name.....</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QComboBox" name="FilterRoleComboBox">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                 <horstretch>10</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <item>
+                <property name="text">
+                 <string>All</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Admin</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Cashier</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Inventory Manager</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="EditUserButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>Edit User</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/icons/edit-white-30.svg</normaloff>:/icons/edit-white-30.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="DeleteUserButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>Delete User</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/icons/delete-white-30.svg</normaloff>:/icons/delete-white-30.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AddUserButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Add User</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/icons/add-white-30.svg</normaloff>:/icons/add-white-30.svg</iconset>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTableView" name="UserPageTableView">
+             <property name="cursor" stdset="0">
+              <cursorShape>ArrowCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+             </property>
+             <property name="showGrid">
+              <bool>false</bool>
+             </property>
+             <property name="sortingEnabled">
+              <bool>true</bool>
+             </property>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderDefaultSectionSize">
+              <number>50</number>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="NumberOfUserRecordsShownLabel">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="AddUserPage"/>
+         <widget class="QWidget" name="UpdateUserPage"/>
+         <widget class="QWidget" name="CategoryManagementPage">
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="TopBarHLayout_3" stretch="0,0,0,0,0,0,0">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <property name="topMargin">
+              <number>20</number>
+             </property>
+             <property name="bottomMargin">
+              <number>20</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="CategoryFormNameLabel">
+               <property name="styleSheet">
+                <string notr="true">font-size: 25px;
+color: black;
+font-weight: bold;</string>
+               </property>
+               <property name="text">
+                <string>Categories</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="SearchCategoryByNameLineEdit">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+               <property name="placeholderText">
+                <string>Search by name.....</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Orientation::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QComboBox" name="FilterRoleComboBox_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                 <horstretch>10</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QComboBox::SizeAdjustPolicy::AdjustToContentsOnFirstShow</enum>
+               </property>
+               <property name="minimumContentsLength">
+                <number>0</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>All</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>has_kg_unit</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>has_pcs_unit</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="EditCategoryButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>Edit Category</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/icons/edit-white-30.svg</normaloff>:/icons/edit-white-30.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="DeleteCategoryButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="text">
+                <string>Delete Category</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/icons/delete-white-30.svg</normaloff>:/icons/delete-white-30.svg</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="AddCategoryButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Add Category</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/icons/add-white-30.svg</normaloff>:/icons/add-white-30.svg</iconset>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTableView" name="CategoryPageTableView">
+             <property name="cursor" stdset="0">
+              <cursorShape>ArrowCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SelectionMode::SingleSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+             </property>
+             <property name="showGrid">
+              <bool>false</bool>
+             </property>
+             <property name="sortingEnabled">
+              <bool>true</bool>
+             </property>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderDefaultSectionSize">
+              <number>50</number>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="CategoryRecordCountLabel">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="AddCategoryPage"/>
+         <widget class="QWidget" name="analyticsPage"/>
+         <widget class="QWidget" name="Cashier"/>
+         <widget class="QWidget" name="UpdateCategoryPage"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

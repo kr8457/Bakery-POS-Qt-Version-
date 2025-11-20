@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AnalyticsForm</class>
+ <widget class="QWidget" name="AnalyticsForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout"/>
+ </widget>
+</ui>

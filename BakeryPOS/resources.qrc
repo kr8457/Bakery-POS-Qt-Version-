@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fonts/Poppins-Bold.ttf</file>
+        <file>fonts/Poppins-Italic.ttf</file>
+        <file>fonts/Poppins-Medium.ttf</file>
+        <file>fonts/Poppins-MediumItalic.ttf</file>
+        <file>fonts/Poppins-Regular.ttf</file>
+        <file>fonts/Poppins-SemiBold.ttf</file>
+        <file>fonts/Poppins-SemiBoldItalic.ttf</file>
+        <file>icons/drop-down.svg</file>
+        <file>icons/add-black-30.svg</file>
+        <file>icons/add-white-30.svg</file>
+        <file>icons/analytics-black-30.svg</file>
+        <file>icons/analytics-white-30.svg</file>
+        <file>icons/category-black-30.svg</file>
+        <file>icons/category-white-30.svg</file>
+        <file>icons/delete-black-30.svg</file>
+        <file>icons/delete-white-30.svg</file>
+        <file>icons/edit-black-30.svg</file>
+        <file>icons/edit-white-30.svg</file>
+        <file>icons/invoice-black-30.svg</file>
+        <file>icons/invoice-white-30.svg</file>
+        <file>icons/logout-black-30.svg</file>
+        <file>icons/logout-white-30.svg</file>
+        <file>icons/product-black-30.svg</file>
+        <file>icons/product-white-30.svg</file>
+        <file>icons/user-black-30.svg</file>
+        <file>icons/user-white-30.svg</file>
+    </qresource>
+</RCC>

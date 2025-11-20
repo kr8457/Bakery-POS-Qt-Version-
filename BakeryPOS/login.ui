@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login</class>
+ <widget class="QDialog" name="login">
+  <property name="windowModality">
+   <enum>Qt::WindowModality::WindowModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>396</width>
+    <height>532</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>10000</width>
+    <height>10000</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::FocusPolicy::NoFocus</enum>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Bakery POS</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: white;
+}
+
+QLabel#labelTitle {
+    font-size: 60px;
+    color: black;
+}
+
+QCheckBox {
+    color: black;
+    spacing: 6px;
+    font-size: 16px;
+}
+
+QLineEdit {
+    border: 1.82px solid #1F1F1F;
+    border-radius: 6.28px;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+}
+
+QPushButton#btnLogin {
+    background-color: #ADE8F4;
+    border: 1.82px solid #1F1F1F;
+    border-radius: 6.28px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+QPushButton#btnLogin:pressed {
+    background-color: #0096C7;
+}
+</string>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1,1,1,0,1">
+   <property name="spacing">
+    <number>30</number>
+   </property>
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="labelTitle">
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>-1</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Login</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Policy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="usernameLineEdit">
+     <property name="placeholderText">
+      <string>Name...</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="passwordLineEdit">
+     <property name="echoMode">
+      <enum>QLineEdit::EchoMode::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Password</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>Show password</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Policy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnLogin">
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Login</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
